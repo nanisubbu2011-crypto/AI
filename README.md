@@ -1,6 +1,8 @@
-# CalcTutor 2.0 Prototype
-Independent mobile-first study copilot prototype.
+# CalcTutor 2.0
 
-Open `index.html` in a browser. No build tools are required.
+Upload all files to the ROOT of the GitHub repository:
+index.html, style.css, app.js, manifest.webmanifest, sw.js.
 
-Next stage: secure AI backend, real problem solver, image/worksheet input, JEE/Olympiad modes, persistent progress and authentication.
+GitHub Pages: Settings -> Pages -> Deploy from branch -> main -> /(root).
+
+The tutor and scanner are frontend-ready demos. Real AI/OCR needs a secure backend/serverless endpoint. Never put an AI API key in app.js or index.html.

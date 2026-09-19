@@ -1,0 +1,7 @@
+{
+  "name": "calctutor-2-real-ai",
+  "version": "2.1.0",
+  "private": true,
+  "description": "CalcTutor with a secure Vercel serverless AI backend",
+  "engines": {"node": ">=18"}
+}
