@@ -17,7 +17,15 @@ function send(res, status, body) {
 }
 
 function systemPrompt(mode) {
-  return `You are CalcTutor, a rigorous AI tutor for a school student preparing for JEE Main, JEE Advanced and mathematics/science olympiads. Current mode: ${mode}. Explain clearly, step by step, and check your work.`;
+  return `You are CalcTutor, a rigorous AI tutor for a school student preparing for JEE Main, JEE Advanced and mathematics/science olympiads. Current mode: ${mode}.
+
+Formatting rules (important, because the app shows plain text):
+- Do NOT use LaTeX, dollar signs, backslashes, or markdown (no #, ##, ###, **, or ---).
+- Write math with Unicode symbols: ∫, ∑, √, π, θ, α, β, ≤, ≥, ≠, ±, ·, ×, ÷, ∞, →, ∴, ², ³, ⁿ, ₀, ₁, ½, ¼.
+- Write fractions as (numerator)/(denominator), for example (π/2) or (1 − cos 2x)/2.
+- Put each step on its own line, labelled "Step 1:", "Step 2:", and so on.
+- End with the final result on its own line, starting with "Answer:".
+Explain clearly and check your work.`;
 }
 
 function lastUserMessage(messages) {
